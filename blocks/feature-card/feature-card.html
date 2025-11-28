@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id="page-title"></title>
+</head>
+<body>
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0; padding:0;">
+    <tr>
+      <td align="center" style="padding:24px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:640px; width:100%;">
+          <tr>
+            <td style="background:#FFFFFF; border:1px solid #E5E7EB; border-radius:12px; overflow:hidden;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <!-- Image column -->
+                  <td valign="top" style="width:260px; padding:16px;">
+                    <img src="\assets\images\mail-boxes.png" width="228" style="display:block; width:228px;"/>
+                  </td>
+
+                  <!-- Content column -->
+                  <td valign="top" style="padding:16px 20px 20px 0; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+                    <h3 id="block-title" style="margin:0 0 12px 0; font-size:18px; font-weight:600; color:#111827;"></h3>
+                    <p id="block-body" style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#374151;"></p>
+                    <a id="block-button" target="_blank" style="
+                      display:inline-block;
+                      background:#D1021B;
+                      color:#FFFFFF;
+                      text-decoration:none;
+                      font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+                      font-size:16px;
+                      font-weight:600;
+                      line-height:44px;
+                      padding:0 24px;
+                      border-radius:999px;
+                      min-width:160px;
+                      text-align:center;">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <script type="module">
+    import { blockContent } from './content.js';
+
+    // Populate content dynamically
+    document.getElementById('page-title').innerText = blockContent.title;
+    document.getElementById('block-title').innerText = blockContent.title;
+    document.getElementById('block-body').innerText = blockContent.body;
+    document.getElementById('block-button').innerText = blockContent.buttonText;
+    document.getElementById('block-button').href = blockContent.buttonLink;
+    const img = document.getElementById('block-image');
+    img.src = blockContent.imageSrc;
+    img.alt = blockContent.imageAlt;
+  </script>
+</body>
+</html>
