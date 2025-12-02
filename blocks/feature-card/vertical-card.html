@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Vertical Card</title>
+    <meta charset="UTF-8">
+    <title>Vertical Card</title>
 </head>
+
 <body>
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0; padding:0;">
-    <tr>
-      <td align="center" style="padding:24px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:350px; width:100%;">
-          <tr>
-            <td style="background:#FFFFFF; border:1px solid #E5E7EB; border-radius:12px; overflow:hidden;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0; padding:0;">
+        <tr>
+            <td align="center" style="padding:24px;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+                    style="max-width:350px; width:100%;">
+                    <tr>
+                        <td style="background:#FFFFFF; border:1px solid #E5E7EB; border-radius:12px; overflow:hidden;">
 
-              <!-- CARD VERTICAL -->
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                
-                <!-- Image on top -->
-                <tr>
-                  <td align="center" style="padding:16px;">
-                    <img src="\assets\images\travel-insurance.png" width="228" style="display:block; width:330px;"/>
-                  </td>
-                </tr>
+                            <!-- CARD VERTICAL -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
 
-                <!-- Title -->
-                <tr>
-                  <td style="padding:0 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-                    <h3 id="block-title" style="
+                                <!-- Image on top -->
+                                <tr>
+                                    <td align="center" style="padding:16px;">
+                                        <img src="\assets\images\travel-insurance.png" width="228"
+                                            style="display:block; width:330px;" />
+                                    </td>
+                                </tr>
+
+                                <!-- Title -->
+                                <tr>
+                                    <td
+                                        style="padding:0 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+                                        <h3 style="
                       margin:0 0 12px 0;
                       font-size:20px;
                       font-weight:600;
                       color:#111827;
                       text-align:left;
-                    "></h3>
-                  </td>
-                </tr>
+                    ">Seguro Viagem</h3>
+                                    </td>
+                                </tr>
 
-                <!-- Body -->
-                <tr>
-                  <td style="padding:0 24px 16px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-                    <p id="block-body" style="
-                      margin:0 0 16px 0;
-                      font-size:16px;
-                      line-height:1.5;
-                      color:#374151;
-                      text-align:left;
-                    "></p>
-                  </td>
-                </tr>
+                                <!-- Body -->
+                                <tr>
+                                    <td
+                                        style="padding:0 24px 16px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+                                        <p style="
+                                            margin:0 0 16px 0;
+                                            font-size:16px;
+                                            line-height:1.5;
+                                            color:#374151;
+                                            text-align:left;
+                                            ">
+                                            Este Verão, desfrute da sua viagem sem
+                                            precalços. O Seguro Viagem cobre
+                                            despesas médicas, bagagem, acidentes
+                                            pessoais e imprevistos em viagem.
+                                            Aproveite ainda o desconto de 10% no
+                                            prémio a partir da 3ª pessoa segura.</p>
+                                    </td>
+                                </tr>
 
-                <!-- Button -->
-                <tr>
-                  <td align="center" style="padding:0 24px 24px 24px;">
-                    <a id="block-button" target="_blank" style="
+                                <!-- Button -->
+                                <tr>
+                                    <td align="center" style="padding:0 24px 24px 24px;">
+                                        <a id="block-button" target="_blank" style="
                       display:inline-block;
                       background:#D1021B;
                       color:#FFFFFF;
@@ -64,31 +76,19 @@
                       border-radius:999px;
                       min-width:160px;
                       text-align:center;
-                    "></a>
-                  </td>
-                </tr>
+                    ">Simular agora</a>
+                                    </td>
+                                </tr>
 
-              </table>
-              <!-- END CARD VERTICAL -->
+                            </table>
+                            <!-- END CARD VERTICAL -->
 
+                        </td>
+                    </tr>
+                </table>
             </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-
-  <script type="module">
-    import { blockContent } from './content.js';
-
-    document.getElementById('block-title').innerText = blockContent.title;
-    document.getElementById('block-body').innerText = blockContent.body;
-    document.getElementById('block-button').innerText = blockContent.buttonText;
-    document.getElementById('block-button').href = blockContent.buttonLink;
-
-    const img = document.getElementById('block-image');
-    img.src = blockContent.imageSrc;
-    img.alt = blockContent.imageAlt;
-  </script>
+        </tr>
+    </table>
 </body>
+
 </html>

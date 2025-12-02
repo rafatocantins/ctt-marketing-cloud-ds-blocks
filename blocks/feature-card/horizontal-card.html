@@ -20,10 +20,10 @@
 
                   <!-- Content column -->
                   <td valign="top" style="padding:16px 20px 20px 0; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
-                    <h3 id="block-title" style="margin:0 0 12px 0; font-size:18px; font-weight:600; color:#111827;"></h3>
-                    <p id="block-body" style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#374151;"></p>
-                    <div style="text-align:center;">
-                        <a id="block-button" target="_blank" style="
+                    <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:600; color:#111827;">Correção de endereços</h3>
+                    <p style="margin:0 0 16px 0; font-size:16px; line-height:1.5; color:#374151;">Assegura um endereçamento postal normalizado, contribuindo para a eficiência dos processos e redução das devoluções. Melhore a sua base de dados com a identificação e correção de endereços incorretos.</p>
+                    <div style="text-align:left;">
+                        <a target="_blank" style="
                         display:inline-block;
                         background:#D1021B;
                         color:#FFFFFF;
@@ -32,10 +32,11 @@
                         font-size:16px;
                         font-weight:600;
                         line-height:44px;
-                        padding:0 24px;
+                        padding:0 16px;
                         border-radius:999px;
                         min-width:160px;
                         text-align:center;">
+                        Visitar site
                         </a>
                     </div>
                   </td>
@@ -47,18 +48,5 @@
       </td>
     </tr>
   </table>
-
-  <script type="module">
-    import { blockContent } from './content.js';
-
-    // Populate content dynamically
-    document.getElementById('block-title').innerText = blockContent.title;
-    document.getElementById('block-body').innerText = blockContent.body;
-    document.getElementById('block-button').innerText = blockContent.buttonText;
-    document.getElementById('block-button').href = blockContent.buttonLink;
-    const img = document.getElementById('block-image');
-    img.src = blockContent.imageSrc;
-    img.alt = blockContent.imageAlt;
-  </script>
 </body>
 </html>
