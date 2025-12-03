@@ -1,0 +1,20 @@
+%%[
+  SET @company_address = AttributeValue("company_address")
+  SET @unsubscribe_url = AttributeValue("unsubscribe_url")
+  SET @preferences_url = AttributeValue("preferences_url")
+]%%
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+    style="max-width:640px; width:100%; background:#FFFFFF; overflow:hidden; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+    <tr>
+        <td style="padding:16px 24px; text-align:center;">
+            <p style="margin:0; font-size:12px; color:#000000;">
+                %%=v(@company_address)=%%
+            </p>
+            <p style="margin:8px 0 0 0; font-size:12px;">
+                <a href="%%=v(@unsubscribe_url)=%%" style="color:#D1021B; text-decoration:none; margin-right:16px;">Anular a subscrição</a>
+                <a href="%%=v(@preferences_url)=%%" style="color:#D1021B; text-decoration:none;">Gerir preferências</a>
+            </p>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,34 @@
+%%[ 
+  SET @banner = AttributeValue("banner_url")
+  SET @view_link_text = AttributeValue("view_email_text")
+  SET @view_link_url = AttributeValue("view_email_url")
+]%%
+
+%%=ContentBlockByKey("header-1")=%%
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0; padding:0;">
+  <tr>
+    <td align="center" style="padding:24px;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+             style="max-width:640px; width:100%; background:#FFFFFF; overflow:hidden;">
+
+        <!-- Visualization link -->
+        <tr>
+          <td align="right" style="padding:16px 24px 12px 24px; font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif; font-size:12px; color:#D1021B;">
+            <a href="%%=v(@view_link_url)=%%" style="color:#D1021B; text-decoration:none;">
+              %%=v(@view_link_text)=%%
+            </a>
+          </td>
+        </tr>
+
+        <!-- Dynamic banner -->
+        <tr>
+          <td>
+            <img src="%%=v(@banner)=%%" width="100%" alt="Banner" style="display:block; width:100%; max-width:640px; border:0; line-height:0;">
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>

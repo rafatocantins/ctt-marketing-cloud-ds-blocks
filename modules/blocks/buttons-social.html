@@ -1,0 +1,26 @@
+<table role="presentation" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+
+    <!-- FACEBOOK -->
+    %%[
+      SET @url = AttributeValue("facebook_url")
+      SET @icon = AttributeValue("facebook_icon")
+    ]%%
+    %%=ContentBlockByKey("social-button")=%%
+
+    <!-- INSTAGRAM -->
+    %%[
+      SET @url = AttributeValue("instagram_url")
+      SET @icon = AttributeValue("instagram_icon")
+    ]%%
+    %%=ContentBlockByKey("social-button")=%%
+
+    <!-- LINKEDIN -->
+    %%[
+      SET @url = AttributeValue("linkedin_url")
+      SET @icon = AttributeValue("linkedin_icon")
+    ]%%
+    %%=ContentBlockByKey("social-button")=%%
+
+  </tr>
+</table>

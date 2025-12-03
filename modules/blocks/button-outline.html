@@ -1,0 +1,19 @@
+<!-- GENERIC OUTLINE BUTTON -->
+<a href="%%=v(@link)=%%"
+   style="font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+          display:inline-block;
+          white-space:nowrap;
+          padding:0 12px;
+          height:40px;
+          line-height:40px;
+          border:1.8px solid #D1021B;
+          border-radius:4px;
+          background:transparent;
+          color:#D1021B;
+          font-size:14px;
+          font-weight:600;
+          text-decoration:none;">
+  %%=v(@label)=%%
+  %%[ IF NOT EMPTY(@icon) THEN ]%%
+    <img src="%%=v(@icon)=%%"
+         width="12"
